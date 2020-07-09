@@ -22,7 +22,7 @@ class lista{
     
     
     
-    public void hacer ( String x , String y , String z){
+    public void hacer ( String x , String y ){
         if (f == null){
          f = new nodo(x,y);
          f.prox = f;
