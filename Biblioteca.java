@@ -1,4 +1,4 @@
-paquete 
+paquete biblioteca ;
 import java.io.*;
 import java.util.Scanner;
 import java.io.BufferedWriter;
