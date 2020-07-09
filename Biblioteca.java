@@ -6,6 +6,9 @@
 package biblioteca;
 import java.io.*;
 import java.util.Scanner;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
 
 
 class lista{
@@ -97,11 +100,20 @@ class lista{
  */
 public class Biblioteca {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+     void main(String[] args) {
+         lista lis = new lista ();
+     Scanner leer = new Scanner(System.in);
+     String L;
+     int cantidad = 0;
+    
+     FileReader filer = new FileReader("lectores.in.txt");//archivo
+     BufferedReader buffer = new BufferedReader(filer);
+     FileWriter filew = new FileWriter("lectores.out.txt");
+     BufferedWriter buffew = new BufferedWriter(filew); 
+     
+      while((L = buffer.readLine())!=null){
+            cantidad++;
+        }
+     }
     
 }
